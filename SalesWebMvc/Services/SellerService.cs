@@ -22,7 +22,9 @@ namespace SalesWebMvc.Services
 
         public void Insert(Seller obj)
         {
-            obj.Departament = _context.Departament.First();
+            //primeira linha era usada para inserir um departamento aleatório
+            //somente para não ficar sem departamento
+            //obj.Departament = _context.Departament.First();
             _context.Add(obj);
             _context.SaveChanges();
         }
