@@ -108,7 +108,7 @@ namespace SalesWebMvc.Controllers
         {
             if (id != seller.Id)
             {
-                return RedirectToAction(nameof(Error), new { message = "Id missmatch" });
+                return RedirectToAction(nameof(Error), new { message = "Id mismatch" });
             }
 
             try
